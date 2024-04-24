@@ -137,6 +137,7 @@ class StudentWithBatch(APIView):
             'batch': batch_serializer.data,
             
         }
+        return Response(response_data)
 class SchoolWithBatch(APIView):
     def get(self, request,school_id, format=None):
         try:
