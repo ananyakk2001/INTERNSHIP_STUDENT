@@ -12,5 +12,6 @@ urlpatterns =[
     path('student/<int:student_id>/edit/', student_edit, name='student-edit'),
     path('student/<int:student_id>/update/', student_update, name='student-update'),     
     path('student/<int:student_id>/batch/', StudentWithBatch.as_view(), name='student-with-batch'),
+    path('school/<int:school_id>/Batch/',SchoolWithBatch.as_view(),name='School-With-Batch'),
     
 ]
